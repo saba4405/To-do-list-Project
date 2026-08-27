@@ -1,0 +1,120 @@
+*{
+    
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background: pink;
+    padding: 10px;
+    
+}
+
+h2{
+    color: #d11d53;
+    position: relative;
+    top: 5%;
+    bottom: 5%;
+    line-height: 20px;
+    font-size: 40px;
+    padding: 20px;
+    margin: 4px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    flex: end;
+}
+
+#typeBg{
+    height: 70px;
+    width: 550px;
+    background-color: lightblue;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    top: 15%;
+    left: 30%;
+    margin: 2px;
+    padding: 2px;
+}
+
+#input-box{
+    height: 40px;
+    width: 450px;
+    background-color: #ffe4e1;
+    border-radius: 10px;
+    position: relative;
+    top: 12%;
+    bottom: 10%;
+    left: -9%;
+    border: 2px solid black;
+    padding: 2px;
+    margin: 2px;
+}
+
+#add{
+    background-color: #e1275f;
+    color: white;
+    height: 40px;
+    width:55px;
+    text-align: center;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 5px;
+    margin: 2px;
+    position: relative;
+    left: 87%;
+    top: 10%;
+    cursor: pointer;
+}
+
+.container2{
+    height: 400px;
+    width: 700px;
+    border: 2px solid black;
+    background-color: lightblue;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    top: 25%;
+    right: 20%;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position:absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.webp);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(images/checked.webp);
+}
+
+ul li span {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    color: #e1275f;
+    font-weight: bold;
+}
